@@ -3,11 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PortController;
 
-Route::get('/create-port',[PortController::class,'store']);
+Route::get('/', [PortController::class, 'index']);
 
-Route::get('/nearby-ports',[PortController::class,'nearbyPorts']);
+Route::get('/create-port', [PortController::class, 'store']);
 
+Route::delete('/delete-port/{id}', [PortController::class, 'destroy']);
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/nearby-ports', [PortController::class, 'nearbyPorts']);

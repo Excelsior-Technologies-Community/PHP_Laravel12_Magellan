@@ -470,4 +470,7 @@ PHP_Laravel12_Magellan
 ---
 
 Your PHP_Laravel12_Magellan Project is now ready!
+<<<<<<< HEAD
 
+=======
+>>>>>>> development
