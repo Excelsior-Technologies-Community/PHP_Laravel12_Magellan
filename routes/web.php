@@ -10,3 +10,5 @@ Route::get('/create-port', [PortController::class, 'store']);
 Route::delete('/delete-port/{id}', [PortController::class, 'destroy']);
 
 Route::get('/nearby-ports', [PortController::class, 'nearbyPorts']);
+
+Route::get('/search-suggestions',    [PortController::class, 'searchSuggestions']);
